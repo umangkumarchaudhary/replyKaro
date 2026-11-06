@@ -1,0 +1,15 @@
+label = "Car & bike dealerships"
+booking_type = "test drive"
+collect = [
+  "which model they're interested in",
+  "budget",
+  "when they plan to buy",
+  "whether they have a vehicle to exchange",
+  "preferred showroom",
+  "name",
+  "phone number",
+]
+rules = [
+  "Prices marked * are starting ex-showroom prices. On-road price depends on variant, city, insurance and registration, so offer an exact quote from the sales team instead of calculating one.",
+  "Don't calculate EMIs or exchange values yourself; offer to have the finance or exchange team call with exact numbers.",
+]

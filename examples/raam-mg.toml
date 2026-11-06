@@ -1,0 +1,125 @@
+# Raam MG: first pilot business.
+# Every fact below comes from the raam-mg-WEBSITE project (src/data/*.ts, src/app/mg-models/page.tsx).
+# Confirm with the dealership before going live, especially prices and timings.
+#
+# Load:  uv run replykaro-load examples/raam-mg.toml
+
+slug = "raam-mg"
+name = "Raam MG"
+vertical = "automotive"
+tone = "warm, polite and helpful, like a good showroom executive; concise"
+about = """
+Authorised MG Motor dealership with 8 outlets across Telangana (Hyderabad, Karimnagar, Warangal).
+Services: new car sales, used car sales, service & maintenance, spare parts, insurance, finance,
+extended warranty, AMC and vehicle exchange.
+"""
+rules = [
+  "All car prices listed are starting ex-showroom prices*.",
+  "Suggest the nearest outlet based on the area the customer mentions.",
+]
+
+[contact]
+phone = "+91-7799935258"
+whatsapp = "+91-7799935258"
+email = "contactus@mghyderabad.com"
+website = "https://raammg.com"
+
+# NOTE: the website lists three different timings (data/contact.ts, data/homefaq.ts, data/outlets.ts).
+# Using contact.ts for now. Confirm the correct timings with the dealership.
+[hours]
+Sales = "Monday to Sunday, 10:00 AM to 7:00 PM"
+Service = "Monday to Sunday, 9:00 AM to 6:00 PM"
+
+[[locations]]
+name = "Banjara Hills"
+address = "Meena Bazar, Road No. 2, opposite Hotel Park Hyatt, Banjara Hills, Hyderabad 500034"
+
+[[locations]]
+name = "Gachibowli"
+address = "7/56/19, Dargah Rd, LIG Chitrapuri Colony, Radhe Nagar, Gachibowli, Hyderabad 500104"
+
+[[locations]]
+name = "Kondapur"
+address = "Plot No. 192, Botanical Garden Road, Camelot Pl, Kondapur, Hyderabad 500084"
+
+[[locations]]
+name = "Kukatpally"
+address = "Metro Pillar A872, Y Junction, MM Plaza, Kukatpally, Hyderabad 500018"
+
+[[locations]]
+name = "Balanagar"
+address = "H.No. 7-8-188/3, Gautam Nagar, Balanagar, Secunderabad, Hyderabad 500011"
+
+[[locations]]
+name = "Attapur"
+address = "Plot No. 28-29, Upperpally village, Rajendra Nagar Mandal, Hyderabad 500048"
+
+[[locations]]
+name = "Karimnagar"
+address = "Jagtial Rd, near Kaloji Statue, Rekurthi, Karimnagar 505451"
+
+[[locations]]
+name = "Warangal"
+address = "Madatha Towers, Hunter Rd, Dwaraka Nagar, Shyampet, Hanamkonda 506001"
+
+[[products]]
+title = "MG Comet EV"
+price = "₹7.98 Lakh"
+description = "Affordable electric car. Also available with Battery-as-a-Service (BaaS) from ₹4.99 Lakh + ₹3.1/km*."
+
+[[products]]
+title = "MG Astor"
+price = "₹9.99 Lakh"
+description = "AI-powered SUV."
+
+[[products]]
+title = "MG Windsor EV"
+price = "₹13.50 Lakh"
+description = "Premium electric car with up to 449 km range."
+
+[[products]]
+title = "MG Hector"
+price = "₹14.49 Lakh"
+description = "Best-selling connected SUV."
+
+[[products]]
+title = "MG ZS EV"
+price = "₹18.98 Lakh"
+description = "Electric internet SUV with up to 461 km range. Also available with BaaS from ₹13 Lakh + ₹4.5/km*."
+
+[[products]]
+title = "MG Gloster"
+price = "₹38.88 Lakh"
+description = "Luxury 4x4 SUV."
+
+[[offers]]
+title = "Exchange bonus and easy EMI"
+description = "Exchange bonus up to ₹50,000. EMI from ₹15,000/month*."
+
+[[faqs]]
+q = "What documents do I need for a test drive?"
+a = "A valid driving licence and one government ID proof (Aadhaar, PAN, Passport or Voter ID)."
+
+[[faqs]]
+q = "Do you provide finance or car loans?"
+a = "Yes, competitive financing with multiple banks and NBFCs. Our finance team helps choose the best option."
+
+[[faqs]]
+q = "What is the warranty on MG cars?"
+a = "Vehicle warranty: 5 years or 1,20,000 km, whichever comes first. EV battery and motor: 8 years or 1,50,000 km. Extended warranty is available."
+
+[[faqs]]
+q = "Do you accept old car exchange?"
+a = "Yes, any make and model. Free evaluation and an instant quote; the exchange value is adjusted against your new MG."
+
+[[faqs]]
+q = "Is home test drive available?"
+a = "Available in select areas, subject to availability. The team will confirm."
+
+[[faqs]]
+q = "Do you provide pickup and drop for service?"
+a = "Yes, complimentary pickup and drop within city limits for scheduled maintenance. Please book 24 hours in advance."
+
+[[faqs]]
+q = "Do you help with EV charging?"
+a = "Our flagship showroom has EV charging stations, and we guide customers on home charger setup and public charging."

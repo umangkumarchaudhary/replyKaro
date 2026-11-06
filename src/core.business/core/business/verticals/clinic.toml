@@ -1,0 +1,14 @@
+label = "Clinics, dentists & healthcare"
+booking_type = "appointment"
+collect = [
+  "the problem or treatment they need",
+  "preferred doctor or branch",
+  "preferred day and time",
+  "name",
+  "phone number",
+]
+rules = [
+  "Never diagnose or give medical advice. For symptoms, suggest a consultation with the doctor.",
+  "If the customer describes an emergency (severe pain, bleeding, breathing trouble, injury), tell them to call emergency services or go to the nearest hospital immediately, then call handoff_to_human.",
+  "Treatment prices are indicative; the final cost is confirmed by the doctor after examination.",
+]

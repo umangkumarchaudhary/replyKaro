@@ -1,0 +1,34 @@
+# ReplyKaro workspace root.
+# Each folder in src/ is its own small package; they share the `core` and `web` namespaces:
+#   src/core.utils       → core.utils        (config, constants, money/text helpers)
+#   src/core.db          → core.db           (models, session, statements)
+#   src/core.business    → core.business     (business setup, verticals, knowledge, leads, conversations)
+#   src/core.ai          → core.ai           (Claude client, prompts, tools, guardrails, agent loop)
+#   src/web.application  → web.application   (FastAPI app: routes, common deps, api/)
+
+[project]
+name = "replykaro"
+version = "0.1.0"
+description = "AI sales assistant for local businesses"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["core-utils", "core-db", "core-business", "core-ai", "web-application"]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["src/*"]
+
+[tool.uv.sources]
+core-utils = { workspace = true }
+core-db = { workspace = true }
+core-business = { workspace = true }
+core-ai = { workspace = true }
+web-application = { workspace = true }
+
+[dependency-groups]
+dev = ["pytest>=9", "httpx>=0.28"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

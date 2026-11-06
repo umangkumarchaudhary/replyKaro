@@ -1,0 +1,20 @@
+[project]
+name = "core-business"
+version = "0.1.0"
+description = "Business setup, industry templates, knowledge base, leads and conversations"
+requires-python = ">=3.12"
+dependencies = ["core-utils", "core-db", "pydantic>=2"]
+
+[project.scripts]
+replykaro-load = "core.business.cli:main"
+
+[tool.uv.sources]
+core-utils = { workspace = true }
+core-db = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["core"]

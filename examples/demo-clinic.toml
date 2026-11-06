@@ -1,0 +1,50 @@
+# FICTIONAL demo business: shows the same engine running a completely different industry.
+# Not a real clinic; every detail below is made up for testing.
+#
+# Load:  uv run replykaro-load examples/demo-clinic.toml
+
+slug = "demo-clinic"
+name = "Smile Care Dental (Demo)"
+vertical = "clinic"
+tone = "calm, caring and reassuring; concise"
+about = "Family dental clinic offering check-ups, cleaning, fillings, root canals and whitening."
+rules = ["Patients under 12 must come with a parent or guardian."]
+
+[contact]
+phone = "+91-90000-00000"
+
+[hours]
+Clinic = "Monday to Saturday, 10:00 AM to 8:00 PM; closed Sunday"
+
+[[locations]]
+name = "Main clinic"
+address = "12 Example Road, Sample Nagar, Hyderabad"
+
+[[products]]
+title = "Dental consultation"
+price = 500
+description = "Check-up and treatment advice by the dentist."
+
+[[products]]
+title = "Teeth cleaning and polishing"
+price = "₹1,500"
+description = "Scaling and polishing, about 45 minutes."
+
+[[products]]
+title = "Root canal treatment"
+price = "₹4,000"
+price_max = "₹8,000"
+description = "Price depends on the tooth; the crown is charged separately."
+
+[[products]]
+title = "Teeth whitening"
+price = "₹6,000"
+description = "In-clinic whitening, one sitting."
+
+[[faqs]]
+q = "Do you take walk-ins?"
+a = "Yes, but booked appointments are seen first. Booking ahead avoids waiting."
+
+[[faqs]]
+q = "Is parking available?"
+a = "Yes, free parking in front of the clinic."

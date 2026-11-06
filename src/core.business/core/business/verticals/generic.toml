@@ -1,0 +1,12 @@
+# Default template — used when a business's vertical has no file of its own.
+# A vertical holds only what differs between KINDS of business.
+# Anything specific to ONE business goes in that business's profile, never here.
+
+label = "Any local business"
+booking_type = "appointment"
+
+# What the assistant should find out, in a natural order
+collect = ["what they need", "budget", "when they need it", "preferred location", "name", "phone number"]
+
+# Extra rules for this kind of business (added to the core rules)
+rules = []
